@@ -1,0 +1,51 @@
+
+-->                            JSX
+
+// import logo from './logo.svg';
+import './Appa.css';
+let name = 'Aneesh';
+function App() {
+  return (<>
+{/*       <>
+        <div className="Aneesh">Lovelyyy</div>  --> App.css can add color
+      // bcz it is import App.css folder. check it.    
+      
+       </> */}
+    <nav>
+      <li> Home </li>
+      <li> About </li>
+      <li> Contact </li>
+    </nav>
+    <div className="container">
+    <h1> Hello {name}</h1>
+    {/* <img src={logo} alt="log" /> */}
+      <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit asperiores perferendis veniam maxime tempora dignissimos fugit amet vel sit omnis alias ipsum aliquid quas ducimus, numquam ipsa adipisci repudiandae.</p>
+    </div>
+    </>
+  );
+}
+
+export default App;
+
+--                                   TextForm
+
+import React from "react"
+
+export default function TextForm(props) {
+  return (
+    <div>
+        <h1>{props.heading} </h1>
+        <div className="mb-3">
+        <textarea className="form-control" id="mybox" rows="8"></textarea>
+        </div>
+        <button className='btn btn-primary'>Convert to Upperase</button>
+    </div>
+  )
+}
+
+
+
+
+
+
+
